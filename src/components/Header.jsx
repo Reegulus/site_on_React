@@ -6,6 +6,7 @@ import {Home} from "../pages/Home";
 import {About} from "../pages/About";
 import {Contacts} from "../pages/Contacts";
 import {Blog} from "../pages/Blog";
+import FormCheckInput from "react-bootstrap/FormCheckInput";
 
 export function Header() {
     // render() {
@@ -30,7 +31,7 @@ export function Header() {
                         <Nav.Link href={"/contacts"}>Contacts</Nav.Link>
                         <Nav.Link href={"/blog"}>Blog</Nav.Link>
                     </Nav>
-                    <Form inline>
+                    <Form inline={"inline"}>
                         <FormControl
                             className={"mr-auto"}
                             placeholder={"Search"}
