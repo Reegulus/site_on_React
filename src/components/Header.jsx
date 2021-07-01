@@ -3,6 +3,7 @@ import {Button, Container, Form, FormControl, Nav, Navbar} from "react-bootstrap
 import logo from "./logo/logo192.png"
 import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import {Home} from "../pages/Home";
+import {About} from "../pages/About";
 
 export function Header() {
     // render() {
