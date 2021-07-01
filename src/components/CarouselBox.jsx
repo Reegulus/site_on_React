@@ -1,6 +1,6 @@
 import React from "react";
-import forestImg from "../assets/forest.jpg"
-import picture from "../assets/picture.jpg"
+import kruzhkaImg from "../assets/kruzhka.jpg"
+import mashinaImg from "../assets/mashina.jpg"
 import {Carousel} from "react-bootstrap";
 
 export function CarouselBox() {
@@ -9,7 +9,7 @@ export function CarouselBox() {
             <Carousel.Item>
                 <img
                 className={"d-block w-100"}
-                    src={forestImg}
+                    src={kruzhkaImg}
                 alt="forest"
                 />
                 <Carousel.Caption>
@@ -22,7 +22,7 @@ export function CarouselBox() {
             <Carousel.Item>
                 <img
                 className={"d-block w-100"}
-                    src={picture}
+                    src={mashinaImg}
                 alt="forest"
                 />
                 <Carousel.Caption>
