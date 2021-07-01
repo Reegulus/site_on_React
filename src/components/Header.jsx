@@ -30,11 +30,11 @@ export function Header() {
                         <Nav.Link href={"/contacts"}>Contacts</Nav.Link>
                         <Nav.Link href={"/blog"}>Blog</Nav.Link>
                     </Nav>
-                    <Form inline={"inline"}>
+                    <Form inline>
                         <FormControl
-                            type={"text"}
-                            placeholder={"Search"}
                             className={"mr-auto"}
+                            placeholder={"Search"}
+                            type={"text"}
                         />
                         <Button variant={"outline-info"}>Search</Button>
                     </Form>
