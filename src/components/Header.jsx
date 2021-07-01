@@ -9,12 +9,12 @@ import {Blog} from "../pages/Blog";
 import FormCheckInput from "react-bootstrap/FormCheckInput";
 
 export function Header() {
-    // render() {
     return (
         <>
         <Navbar collapseOnSelect expand={"md"} bg={"dark"} variant={"dark"}>
             <Container>
                 <Navbar.Brand href={"/"}>
+                    {"React side "}
                     <img
                         src={logo}
                         height={"30"}
@@ -23,19 +23,22 @@ export function Header() {
                         alt="Logo"
                     />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls={"responsive-navbar-nav"}/>
-                <Navbar.Collapse id={"responsive-navbar-nav"}>
-                    <Nav className={"mr-auto"}>
+                <Navbar.Toggle aria-controls={"navbarScroll"}/>
+                <Navbar.Collapse id={"navbarScroll"}>
+                    <Nav className={"mr-auto my-2 my-lg-0"}
+                         style={{ maxHeight: '100px' }}
+                         navbarScroll
+                    >
                         <Nav.Link href={"/home"}>Home</Nav.Link>
                         <Nav.Link href={"/about"}>About us</Nav.Link>
                         <Nav.Link href={"/contacts"}>Contacts</Nav.Link>
                         <Nav.Link href={"/blog"}>Blog</Nav.Link>
                     </Nav>
-                    <Form inline={"inline"}>
+                    <Form className={"d-flex    "}>
                         <FormControl
-                            className={"mr-auto"}
-                            placeholder={"Search"}
                             type={"text"}
+                            placeholder={"Search"}
+                            className={"mr-2"}
                         />
                         <Button variant={"outline-info"}>Search</Button>
                     </Form>
